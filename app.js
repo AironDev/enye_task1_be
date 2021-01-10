@@ -4,11 +4,12 @@ const apiRoutes = require("./routes/api");
 const webRoutes = require("./routes/web");
 const CustomError = require("./helpers/customError");
 const errorHandler = require("./helpers/errorhandler");
+
 const port = 3000;
 
 //setup app routes
 app.use("/", webRoutes);
-app.use("/api/v1/", apiRoutes);
+app.use("/api", apiRoutes);
 
 
 // Invalid route error handler
