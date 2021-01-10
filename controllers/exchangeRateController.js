@@ -20,13 +20,19 @@ exports.getRate = async (req, res, next) => {
       }
     })
     .then((response) => {
+
+      let data = response.data
       
-      let data = response.data;
+      let results = {
+        base: data.base,
+        date: data.date,
+        rates: data.rates
+      }
       responseHandler(
         res,
         200,
-        data,
-        `Rates retrieved successfully, query: ${JSON.stringify(req.query)}`
+        results,
+        `Rates retrieved successfully`
       );
     })
     .catch(next);
