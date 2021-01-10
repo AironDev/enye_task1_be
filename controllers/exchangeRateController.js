@@ -35,7 +35,14 @@ exports.getRate = async (req, res, next) => {
         `Rates retrieved successfully`
       );
     })
-    .catch(next);
+    .catch(err => {
+      console.log(err)
+      let errorData = {
+        statusCode: err.response.status,
+        statusText: err.response.statusText
+      }
+      return next(new CustomError(400, `${err.response.data.error}`, errorData) );
+    });
 
   } catch (err) {
     return next(new CustomError(401, `Something went wrong ${err}`));
