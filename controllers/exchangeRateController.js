@@ -45,6 +45,7 @@ exports.getRate = async (req, res, next) => {
     });
 
   } catch (err) {
-    return next(new CustomError(401, `Something went wrong ${err}`));
+    // console.log(err)
+    return next(new CustomError(500, `Something went wrong ${err}`));
   }
 };
