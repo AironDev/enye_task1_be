@@ -1,7 +1,7 @@
 {
   "name": "enye_task1",
   "version": "1.0.0",
-  "description": "Enye Internship Backend Task 1",
+  "description": "Enye Internship Backend Prequalification Task 1",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
