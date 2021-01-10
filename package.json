@@ -1,0 +1,35 @@
+{
+  "name": "enye_task1",
+  "version": "1.0.0",
+  "description": "Enye Internship Backend Task 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airondev/enye_task1.git"
+  },
+  "keywords": [
+    "Enye",
+    "Tech",
+    "Internship",
+    "Backend",
+    "Express",
+    "Js",
+    "NodeJs",
+    "Airondev",
+    "Aaron",
+    "Aniebiet",
+    "Airon"
+  ],
+  "author": "Airondev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airondev/enye_task1/issues"
+  },
+  "homepage": "https://github.com/airondev/enye_task1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
